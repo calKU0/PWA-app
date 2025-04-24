@@ -4,7 +4,7 @@
     "description": "Prosta PWA UEK",
     "background_color": "#af0a1a",
     "theme_color": "#af0a1a",
-    "display": "fullscreen",
+    "display": "standalone",
     "orientation": "any",
     "start_url": ".",
     "scope": ".",
