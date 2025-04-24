@@ -6,8 +6,14 @@
     "theme_color": "#af0a1a",
     "display": "fullscreen",
     "orientation": "any",
-    "start_url": "/",
+    "start_url": ".",
     "scope": ".",
     "lang": "fa-IR",
-    "dir": "rtl"
+    "dir": "rtl",
+    "icons": [
+    {
+      "src": "/fav-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }]
 }
