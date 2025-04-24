@@ -1,15 +1,22 @@
 {
-  "name": "UEKPWA",
-  "short_name": "ueakpwa",
-  "theme_color": "#1976d2",
-  "background_color": "#fafafa",
-  "display": "standalone",
-  "scope": ".",
+  "name": "UekPwa",
+  "short_name": "UekPwa",
+  "description": "UEK Simple PWA",
+  "icons": [
+      {
+          "src": "./fav-144.png",
+          "sizes": "192x192",
+          "type": "image/png",
+          "purpose": "any maskable"
+      }
+  ],
+  "background_color": "#af0a1a",
+  "theme_color": "#af0a1a",
+  "display": "fullscreen",
+  "orientation": "any",
   "start_url": ".",
-    "icons": [
-    {
-      "src": "/fav-144.png",
-      "sizes": "144x144",
-      "type": "image/png"
-    }]
+  "url": "index.html",
+  "scope": ".",
+  "lang": "pl-PL",
+  "dir": "rtl"
 }

@@ -1,14 +1,27 @@
+
 if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('service-worker.js')
-        .then(registration => {
-          console.log('Service Worker registered:', registration);
-        })
-        .catch(error => {
-          console.log('Service Worker registration failed:', error);
-        });
-    });
-  }
+  window.addEventListener('load', function () {
+      navigator.serviceWorker.register('./pwa-sw.js')
+          .then(function (register) {
+              console.log('PWA service worker ready');
+              register.update();
+          })
+          .catch(function (error) {
+              console.log('Register failed! Error:' + error);
+          });
+
+      // Check user internet status (online/offline)
+      function updateOnlineStatus(event) {
+          if (!navigator.onLine) {
+              alert('Internet access is not possible!')
+          }
+      }
+
+      window.addEventListener('online', updateOnlineStatus);
+      window.addEventListener('offline', updateOnlineStatus);
+
+  });
+}
 
 document.getElementById('sosButton').addEventListener('click', function () {
     if ('vibrate' in navigator) {
