@@ -1,15 +1,11 @@
 {
-    "name": "PWAUEK",
-    "short_name": "PWAUEK",
-    "description": "Prosta PWA UEK",
-    "background_color": "#af0a1a",
-    "theme_color": "#af0a1a",
-    "display": "standalone",
-    "orientation": "any",
-    "start_url": ".",
-    "scope": ".",
-    "lang": "fa-IR",
-    "dir": "rtl",
+  "name": "UEKPWA",
+  "short_name": "ueakpwa",
+  "theme_color": "#1976d2",
+  "background_color": "#fafafa",
+  "display": "standalone",
+  "scope": ".",
+  "start_url": ".",
     "icons": [
     {
       "src": "/fav-144.png",
