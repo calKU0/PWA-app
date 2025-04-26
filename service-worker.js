@@ -1,11 +1,5 @@
 'use strict';
  
- /**
-  * PWA service worker of Red Cherry (https://redcherry.ir)
-  * Code By : Ali Rahimi (https://alirahimi818.ir)
-  * learn more in Github : https://github.com/alirahimi818/simple-PWA
-  */
- 
  var cache_storage_name = 'uek-pwa-1.0';
  var start_page = 'index.html';
  var offline_page = 'index.html';

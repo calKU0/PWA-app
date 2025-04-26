@@ -25,7 +25,12 @@ if ('serviceWorker' in navigator) {
 
 document.getElementById('sosButton').addEventListener('click', function () {
     if ('vibrate' in navigator) {
-        let sosPattern = [200, 100, 200, 100, 200, 600, 600, 600, 200, 100, 200, 100, 200];
+        let sosPattern = [
+            200, 100, 200, 100, 200, 100,  // 3 short
+            600, 100, 600, 100, 600, 100,  // 3 long
+            200, 100, 200, 100, 200         // 3 short
+        ];
+        
         
         navigator.vibrate(sosPattern);
     } else {
@@ -87,9 +92,3 @@ document.querySelector("#showSOS").addEventListener("click", function() {
 document.querySelector("#find-me").addEventListener("click", geoFindMe);
 
 document.querySelector("#geo").addEventListener("click", geo);
-
-document.querySelector("#sosButton").addEventListener('click', () => {
-  if ("vibrate" in navigator) {
-      navigator.vibrate([200, 200, 200, 500, 500, 500, 200, 200, 200]);
-  }
-});
